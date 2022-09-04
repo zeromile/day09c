@@ -16,3 +16,41 @@
     font-family: OdinRoundedLight;
     /* font-weight: 100; */
 }
+
+/* single font family example below */
+
+h1.new100 {
+    font-family: 'Kanit', sans-serif;
+    font-weight: 100;
+    /*  when we don't specifiy a weight then 
+@        the browser will default to the first 
+        font weight that applies. In the above
+        case it would be the first "Bold" 
+        version of Kanit that we specified - 
+        because heading tags are bold by default.*/
+}
+
+h1.new500 {
+    font-family: 'Kanit', sans-serif;
+    font-weight: 500;
+}
+
+h1.new700 {
+    font-family: 'Kanit', sans-serif;
+    font-weight: 700;
+}
+
+h1.new900 {
+    font-family: 'Kanit', sans-serif;
+    font-weight: 900;
+    font-style: italic;
+}
+
+h1.def {
+    font-family: SpaceAge;
+}
+
+@font-face {
+    font-family: SpaceAge;
+    src: url(../fonts/space-age/space_age.otf);
+}
